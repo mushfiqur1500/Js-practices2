@@ -14,13 +14,29 @@
     <li class="book">kazi</li>
     <li class="book">jasim</li>
     <li class="book">humayun</li>
-
   </ul>
+  <section>
+    <ul>
+      <li class="fruit">apple </li>
+      <li class="fruit">mango</li>
+      <li class="fruit">orange</li>
+      <li class="fruit">pineapple</li>
+      <li class="fruit">licchi </li>
+    </ul>
+  </section>
   <script>
+    // Option:1 getElementsByTagName
     console.log(document.getElementsByTagName('li'))
+
+    // Option:2 getElementsByClassName [ return (array like object)   ]
     const bookList = document.getElementsByClassName('book');
     for (const loop of bookList) {
       console.log(loop.innerText) //robindo/ kazi/ jasim/ humayun
+    }
+    // Option:3 querySelectorAll [ return (array like object)   ]
+    const fruitList = document.querySelectorAll(".fruit")
+    for (const loop of fruitList) {
+      console.log(loop.innerText)
     }
   </script>
 </body>
