@@ -8,14 +8,16 @@
 </head>
 
 <body>
-  <header id="header">i am nova</header>
-  <ul>list of book
-    <li class="book">robindo</li>
-    <li class="book">kazi</li>
-    <li class="book">jasim</li>
-    <li class="book">humayun</li>
-  </ul>
-  <section>
+  <section id="section1">
+    <ul>list of book
+      <li class="book" id="book1">robindo</li>
+      <li class="book">kazi</li>
+      <li class="book">jasim</li>
+      <li class="book">humayun</li>
+    </ul>
+  </section>
+
+  <section id="section2">
     <ul>
       <li class="fruit">apple </li>
       <li class="fruit">mango</li>
@@ -24,19 +26,37 @@
       <li class="fruit">licchi </li>
     </ul>
   </section>
+
+  <section class="section3">
+    <ul>
+      <li>dhaka</li>
+      <li>natore</li>
+      <li>rajshahi</li>
+      <li>jasar</li>
+      <li>cox's bazar</li>
+    </ul>
+  </section>
+
+
+
+
+
+
+
+  <script src="./stylein.js"></script>
   <script>
     // Option:1 getElementsByTagName
-    console.log(document.getElementsByTagName('li'))
+    // console.log(document.getElementsByTagName('li'))
 
     // Option:2 getElementsByClassName [ return (array like object)   ]
     const bookList = document.getElementsByClassName('book');
     for (const loop of bookList) {
-      console.log(loop.innerText) //robindo/ kazi/ jasim/ humayun
+      //console.log(loop.innerText) //robindo/ kazi/ jasim/ humayun
     }
     // Option:3 querySelectorAll [ return (array like object)   ]
     const fruitList = document.querySelectorAll(".fruit")
     for (const loop of fruitList) {
-      console.log(loop.innerText)
+      // console.log(loop.innerText)
     }
   </script>
 </body>
