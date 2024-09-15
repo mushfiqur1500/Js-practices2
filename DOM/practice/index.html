@@ -8,16 +8,20 @@
 </head>
 
 <body>
-  <header>i am nova</header>
+  <header id="header">i am nova</header>
   <ul>list of book
-    <li>robindo</li>
-    <li>robindo</li>
-    <li>robindo</li>
-    <li>robindo</li>
+    <li class="book">robindo</li>
+    <li class="book">kazi</li>
+    <li class="book">jasim</li>
+    <li class="book">humayun</li>
 
   </ul>
   <script>
     console.log(document.getElementsByTagName('li'))
+    const bookList = document.getElementsByClassName('book');
+    for (const loop of bookList) {
+      console.log(loop.innerText) //robindo/ kazi/ jasim/ humayun
+    }
   </script>
 </body>
 
